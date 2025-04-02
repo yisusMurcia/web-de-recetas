@@ -1,0 +1,26 @@
+*{/* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*predetermianted color: c5a975*/
+
+html{
+    background-color: #fefefefe;
+    color: #1a1a1a;
+}
+
+header{
+    font-family: "Sour Gummy", sans-serif;
+    text-align: center;
+    background-color: #aa7f4c;
+    border-radius: 3px;
+}
+
+@media(prefers-color-scheme: dark) {
+    html{
+        background-color: #1a1a1a;
+        color: #fefefe;
+    }
+}
