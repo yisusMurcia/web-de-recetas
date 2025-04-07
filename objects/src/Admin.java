@@ -8,7 +8,7 @@ public class Admin extends User{
         return user.deleteRecipe(recipe);
     }
 
-    public boolean deletUser(User user){//Still in development
+    public boolean deleteUser(User user){//Still in development
         return false;
     }
 
