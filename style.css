@@ -18,6 +18,8 @@
 :root{
     --main-background-color: #fefefe;
     --main-text-color: #1a1a1a;
+    --theme-color: #e6dcc2;
+    --theme-color-text:#322318;
 }
 
 /*predetermianted color: c5a975*/
@@ -28,14 +30,17 @@ html{
     font-family: "Poppins", sans-serif;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: "Sour Gummy", sans-serif;
 }
 
 h2{
-    color: #322318;
+    color: var(--theme-color-text);
 }
 
+hr{
+    background-color: var(--theme-color-text);
+}
 header{
     text-align: center;
     background-color: #aa7f4c;
@@ -46,30 +51,51 @@ section{
     margin: 1rem 0;
     padding: 0.8rem;
     border-radius: 3px;
-    background-color: #d6c59b;
+    background-color: var(--theme-color);
 }
 
 #favorites{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;;
 }
 
 #most-favorites-recipes{
-    width: 80%;
-    height: 50vh;
-    background-color: #b89257;
+    width: 95%;
+    opacity: 0.8;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
     overflow-x: scroll;
+    gap: 0.5rem;
+}
+
+.recipe-container{
+    border-radius: 10px;
+    background-color: var(--main-background-color);
+    padding: 0.4rem;
+}
+
+.recipe-instructions{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.recipe-container ul{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 @media(prefers-color-scheme: dark) {
     :root{
         --main-background-color: #1a1a1a;
         --main-text-color: #fefefe;
+        --theme-color: #5e4530;
+        --theme-color-text: #f3efe1;
     }
 }
