@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class User {
+public class User implements Serializable {
     protected final String name;
     protected final ArrayList<Recipe> recipes;
     protected final ArrayList<Recipe> favs;
