@@ -1,0 +1,54 @@
+:root {
+  --main-background-color: #fefefe;
+  --main-text-color: #1a1a1a;
+  --theme-color: #e6dcc2;
+  --theme-color-text:#322318;
+}
+
+*{/* Reset CSS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Personalizar la barra de desplazamiento*/
+::-webkit-scrollbar{
+  background-color: #faf8f200;
+  height: 0.4em;
+  width: 0.4rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #322318;
+  border-radius: 20px;
+  height: 0.2rem;
+}
+
+html{
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  text-align: center;
+  background-color: #aa7f4c;
+  border-radius: 3px;
+}
+
+h1, h2, h3{
+  font-family: "Sour Gummy", sans-serif;
+}
+
+h2{
+  color: var(--theme-color-text);
+}
+
+/*Cambjio tema claro/oscuro*/
+@media(prefers-color-scheme: dark) {
+  :root{
+      --main-background-color: #1a1a1a;
+      --main-text-color: #fefefe;
+      --theme-color: #5e4530;
+      --theme-color-text: #f3efe1;
+  }
+}
